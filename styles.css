@@ -1,0 +1,91 @@
+#ph{
+    border-radius: 10px;
+    float: right;
+    margin: 0px 50px 60px 50px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #3498db;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Change to flex to make the navigation horizontal */
+    justify-content: space-around;
+}
+
+nav li {
+    margin-right: 10px; /* Add margin between list items for better spacing */
+}
+
+nav a {
+    text-decoration: none;
+    color: #98ccda;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+.intro-section,
+.about-class {
+    margin: 20px;
+    flex-grow: 1; 
+}
+
+#intro-container,
+#about-class-container {
+    text-align: justify;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-out;
+}
+
+h1,
+h2 {
+    color: #e61313;
+}
+
+p {
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+#githubContainer {
+    text-align: center;
+    background-color: #16222b;
+    color: #e01515;
+    padding: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
