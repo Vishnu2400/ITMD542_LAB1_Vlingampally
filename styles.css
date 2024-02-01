@@ -1,4 +1,4 @@
-#ph{
+#ph {
     border-radius: 10px;
     float: right;
     margin: 0.5px 50px 0px 50px;
@@ -8,7 +8,7 @@
 body {
     background-image: url('bg.jpg');
     background-size: cover;
-    margin: 100;
+    margin: 0; /* Set margin to 0 */
     font-family: 'Arial', sans-serif;
     display: flex;
     flex-direction: column;
@@ -18,13 +18,13 @@ body {
 .intro-section,
 .about-class {
     margin: 20px;
-    flex-grow: 1; 
+    flex-grow: 1;
 }
 
 #intro-container,
 #about-class-container {
     background-color: white;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: justify;
     padding: 30px;
     border-radius: 10px;
@@ -61,6 +61,26 @@ a:hover {
     padding: 10px;
 }
 
+@media only screen and (max-width: 768px) {
+    #ph {
+        float: none;
+        margin: 10px auto;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .intro-section,
+    .about-class {
+        margin: 10px;
+    }
+
+    #intro-container,
+    #about-class-container {
+        padding: 20px;
+    }
+}
 
 @keyframes fadeIn {
     from {
